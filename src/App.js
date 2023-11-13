@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+//Aplicacion que llama a componente que devuelve un titulo H3
+import React from "react";
 
+//vinculo con el componente
+import TituloH3 from './Components/TituloH3'
+
+//Función que llame al componente que retorna valores de un contador
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Título H1</h1>
+      <TituloH3/>
     </div>
   );
 }
